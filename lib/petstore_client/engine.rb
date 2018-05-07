@@ -15,7 +15,7 @@ module PetstoreClient
       app.config.app[:petstore_client] ||= {}
       app.config.app[:petstore_client].reverse_update(
         api_key: 'token'
-      )
+      ) # TODO: deep_reverse_update.
     end
   end
 end
